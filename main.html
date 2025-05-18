@@ -8,7 +8,16 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
+    <script type="text/javascript" >
+		function daysOfYear(year) {
+        if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+       return 366; // Leap year
+  } else {
+    return 365; // Common year
+  }
+}
+		let year = Number(prompt("Enter the year"));
+		alert(daysOfYear(year));
 </script>
 
 </body>
